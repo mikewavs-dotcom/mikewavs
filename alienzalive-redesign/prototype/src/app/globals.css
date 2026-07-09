@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+/* ————— Alienz Alive design tokens (see /design/design-system.md) ————— */
+@theme {
+  --color-bg: #000000;
+  --color-bg-raised: #0a0a0a;
+  --color-ink: #ffffff;
+  --color-ink-dim: #9c9c9c;
+  --color-ink-faint: #5a5a5a;
+  --color-accent: #ccda00;
+  --color-accent-ink: #000000;
+  --color-line: rgba(255, 255, 255, 0.14);
+  --color-line-strong: rgba(255, 255, 255, 0.32);
+  --color-danger: #ff3b30;
+
+  --font-display: "Archivo Black", "Archivo", system-ui, sans-serif;
+  --font-body: "Archivo", system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+:root {
+  --text-poster: clamp(4rem, 14vw, 13rem);
+  --text-h1: clamp(3rem, 8vw, 7.5rem);
+  --text-h2: clamp(2rem, 5vw, 4rem);
+  --text-h3: clamp(1.4rem, 2.6vw, 2.25rem);
+  --space-section: clamp(96px, 14vh, 200px);
+  --space-section-sm: clamp(64px, 10vh, 128px);
+  --gutter: clamp(16px, 4vw, 64px);
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Display voice */
+.display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+/* Meta voice */
+.meta {
+  font-family: var(--font-body);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+}
+
+.gutter {
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+/* Editorial index rows */
+.index-row {
+  border-bottom: 1px solid var(--color-line);
+  transition: background 150ms var(--ease-out-expo);
+}
+.index-row:hover {
+  background: var(--color-bg-raised);
+}
+.index-row:hover .row-title {
+  transform: translateX(8px);
+  color: var(--color-accent);
+}
+.index-row .row-title {
+  transition:
+    transform 150ms var(--ease-out-expo),
+    color 150ms var(--ease-out-expo);
+}
+.index-row .row-arrow {
+  opacity: 0;
+  transition: opacity 150ms var(--ease-out-expo);
+}
+.index-row:hover .row-arrow {
+  opacity: 1;
+}
+
+/* Poster wall tiles */
+.poster {
+  overflow: hidden;
+  position: relative;
+}
+.poster img {
+  filter: grayscale(100%) contrast(1.05);
+  transition:
+    filter 400ms var(--ease-out-expo),
+    transform 400ms var(--ease-out-expo);
+}
+.poster:hover img,
+.poster:focus-within img {
+  filter: none;
+  transform: scale(1.03) rotate(var(--tilt, -1deg));
+}
+.poster .poster-name {
+  transition: color 150ms var(--ease-out-expo);
+}
+.poster:hover .poster-name,
+.poster:focus-within .poster-name {
+  color: var(--color-accent);
+}
+
+/* Marquee */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee-scroll 40s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* News article prose — real WordPress body HTML */
+.prose-news {
+  max-width: 65ch;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-ink);
+}
+.prose-news p { margin: 1.25em 0; }
+.prose-news a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-news h1, .prose-news h2, .prose-news h3, .prose-news h4 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 1.6em 0 0.6em;
+}
+.prose-news h2 { font-size: 1.8rem; }
+.prose-news h3 { font-size: 1.4rem; }
+.prose-news img {
+  max-width: 100%;
+  height: auto;
+  margin: 2em 0;
+}
+.prose-news figure { margin: 2em 0; }
+.prose-news figcaption {
+  color: var(--color-ink-dim);
+  font-size: 0.8rem;
+  margin-top: 0.5em;
+}
+.prose-news iframe {
+  max-width: 100%;
+  margin: 2em 0;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+.prose-news blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1.25rem;
+  color: var(--color-ink-dim);
+}
+.prose-news ul, .prose-news ol { padding-left: 1.5rem; }
+.prose-news li { margin: 0.4em 0; }
+
+/* Horizontal release rail */
+.rail {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-ink-faint) transparent;
+}
+.rail > * {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
