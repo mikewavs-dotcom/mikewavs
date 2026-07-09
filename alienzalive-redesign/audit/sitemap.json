@@ -1,0 +1,835 @@
+[
+  {
+    "url": "https://alienzalive.com/",
+    "type": "home",
+    "template": "home",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/about-alienz-alive/",
+    "type": "page",
+    "template": "editorial-page",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/alienz-alive-artists/",
+    "type": "roster",
+    "template": "artist-roster",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/alienz-alive-christian-hip-hops-newest-label-new-release-today/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/alienz-alive-news-archive/",
+    "type": "news-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/",
+    "type": "cruft",
+    "template": null,
+    "note": "Bare CPT archive for artists; real roster lives at /alienz-alive-artists/",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/aha-gazelle/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/aklesso/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/alex-jean/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/gawvi/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/hollyn/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/imrsqd/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/jon-keith/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/kaden-jordan/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/kvng-flvcko/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/tj-carroll/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/artist/west-indies/",
+    "type": "artist",
+    "template": "artist-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/block/",
+    "type": "cruft",
+    "template": null,
+    "note": "Elementor block template archive (internal)",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/block/aklesso/",
+    "type": "cruft",
+    "template": null,
+    "note": "Elementor block template (internal)",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/block/holiday-header-2/",
+    "type": "cruft",
+    "template": null,
+    "note": "Elementor block template (internal, seasonal header)",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/block/holiday-header/",
+    "type": "cruft",
+    "template": null,
+    "note": "Elementor block template (internal, seasonal header)",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/block/no-footer/",
+    "type": "cruft",
+    "template": null,
+    "note": "Elementor block template (internal)",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/breaking-barriers-christian-rap-at-rolling-loud-sways-universe/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/cart/",
+    "type": "woocommerce-utility",
+    "template": "woocommerce",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-awards/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/aklesso/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/alex-jean-alienz-alive-press/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/gawvi/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/hollyn-alienz-alive-news/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/imrsqd/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/jon-keith/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/kaden-jordan/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/kvng-flvcko/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/record-label/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/tj-carroll/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/alienz-alive-news/west-indies/",
+    "type": "category-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/category/general/",
+    "type": "cruft",
+    "template": null,
+    "note": "Default \"General\" category archive (1 stray post)",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/checkout/",
+    "type": "woocommerce-utility",
+    "template": "woocommerce",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/christian-rap-song-drops-november-22nd-tj-carroll-road-trip-rapzilla/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/community/",
+    "type": "page",
+    "template": "editorial-page",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/copy-of-hollyn-twm-heat-up-on-winter-lp/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/darkchild-introduces-kaden-jordan/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/ep-rodney-jerkins-darkchild-sessions/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/exclusive-rodney-jerkins-talks-new-prodigy-jon-keith-working-with-brandy-again-beyonce-michael-jackson-more/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/explosive-new-album-atmostfear-by-gawvi-captivates-with-a-powerful-narrative-and-stellar-collaborations/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/foggieraw-joins-hollyn-on-a-w-a-remix/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/gawvi-atmostfear-globalgrind/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/holiday_home/",
+    "type": "cruft",
+    "template": null,
+    "note": "Seasonal alternate homepage (holiday variant), not linked in nav",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/hollyn-twm-heat-up-on-winter-lp/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/how-jon-keith-found-renewal-after-hitting-rock-bottom/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/jon-keith-danileigh-float-on-new-me-single/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/jon-keith-drops-new-butterflies-ep/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/jon-keith-goes-pop-w-eyes-on-us-single/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/jon-keith-miles-minnick-christian-rappers-2024-big-interview/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/jon-keith-shares-d-o-y-o-single/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/kaden-jordan-returns-on-image-single/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/kaden-jordan-signs-to-alienz-alive-drops-set-me-on-fire/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/kvng-flvcko-cutdaties-on-new-track/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/kvng-flvcko-shares-single-break/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/legendary-producer-rodney-darkchild-jerkins-launches-new-christian-music-label-alienz-alive/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/locations.kml",
+    "type": "cruft",
+    "template": null,
+    "note": "Rank Math local-SEO KML file (auto-generated)",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/lp-gawvi-barajas-lunario-deluxe/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/meet-the-founder/",
+    "type": "page",
+    "template": "editorial-page",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/music-news/",
+    "type": "news-archive",
+    "template": "news-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/music-parallax/",
+    "type": "cruft",
+    "template": null,
+    "note": "Sonaar theme demo page (demo tracks: \"Prodigy Lyrics\", \"A SoundCloud Album\")",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/music-slider/",
+    "type": "cruft",
+    "template": null,
+    "note": "Sonaar theme demo page (empty slider demo)",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/music-store/",
+    "type": "cruft",
+    "template": null,
+    "note": "Legacy/duplicate store page superseded by /shop/",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/new-music-aklesso-is-outta-time/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/new-music-friday-the-best-new-songs-that-dropped-this-week-tj-carroll-grave-digger-remixdmagazine/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/new-single-tj-carroll-dear-lord/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/product/alienz-alive-t-shirt-white/",
+    "type": "product",
+    "template": "product-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/product/alienz-alive-t-shirt/",
+    "type": "product",
+    "template": "product-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/rodney-darkchild-jerkins-alienz-alive-dj-five-vemons-hosted-rolling-louds-1st-christian-rap-set-featuring-jon-keith-gawvi-alex-jean/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/rodney-darkchild-jerkins-announces-his-own-alienz-alive-label/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/rodney-darkchild-jerkins-launches-alienz-alive-record-label/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/rodney-darkchild-jerkins-launches-new-record-label-alienz-alive-the-source/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/rodney-darkchild-jerkins-launches-new-record-label-alienz-alive/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/rodney-darkchild-jerkins-new-record-label-aims-to-uplift-inspire/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/rodney-jerkins-jon-keith-on-songwriters-hall-of-fame-more/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/rodney-jerkins-launches-new-record-label-alienz-alive/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/shop/",
+    "type": "shop",
+    "template": "shop",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/single-aklesso-taps-ty-brasel-for-h-d-i/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/tj-carroll-hits-us-with-2-pieces-in-road-trip-just-say-that-hot97/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/tour-grid/",
+    "type": "cruft",
+    "template": null,
+    "note": "Sonaar theme demo events page (\"Events – Grid\")",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/under-construction-coming-soon-page/",
+    "type": "cruft",
+    "template": null,
+    "note": "Old landing/coming-soon page (elementor_canvas)",
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/video-jon-keith-ft-danileigh-new-me/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/",
+    "type": "video-archive",
+    "template": "video-archive",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/aguacero-barajas-gawvi-de-lunario-video-oficial/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/aklesso-1k-phew-reconcile-range-official-music-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/aklesso-he-did-it-feat-ty-brasel-official-visualizer/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/aklesso-jon-keith-freedom/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/aklesso-nobigdyl-investment-official-music-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/alex-jean-i-need-faith-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/alex-jean-matthew-1820-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/alex-jean-moving-relentless-fishing-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/alex-jean-stand-firm-youll-win-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/alex-jean-way-too-good-feat-hulvey-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/alex-jean-when-air-refuses-to-answer-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/gawvi-bitter-pill-official-music-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/gawvi-into-the-atmostfear-official-music-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/hollyn-arent-we-all-feat-foggieraw-official-music-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/imrsqd-bobby-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/jon-keith-danileigh-new-me-official-music-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/jon-keith-eyes-on-us-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/jon-keith-gods-hand-lyric-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/jon-keith-no-love-with-annatoria-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/jon-keith-numb-official-music-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/jon-keith-start-again/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/marquesina-barajas-gawvi-official-music-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/miles-minnick-jon-keith-club-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/prodigal-official-music-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/videos/shine-now-imrsqd-official-video/",
+    "type": "video",
+    "template": "video-detail",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/watch-aklesso-ft-nobigdyl-investment/",
+    "type": "news-post",
+    "template": "news-article",
+    "note": null,
+    "httpStatus": 200
+  },
+  {
+    "url": "https://alienzalive.com/news-3-columns",
+    "type": "broken",
+    "template": null,
+    "note": "Linked from main nav as \"Alienz Archive\" but returns 404 on live site",
+    "httpStatus": 404
+  },
+  {
+    "url": "https://www.billboard.com/lists/asake-new-management-company-artist-signings/aklesso-alienz-alive/",
+    "type": "external-press",
+    "template": null,
+    "note": "WP post #6617 whose permalink points to external press coverage; appears in news listings",
+    "httpStatus": null
+  },
+  {
+    "url": "https://www.hot97.com/news/rodney-darkchild-jerkins-signs-miamis-aklesso-to-alienz-alive/",
+    "type": "external-press",
+    "template": null,
+    "note": "WP post #6598 whose permalink points to external press coverage; appears in news listings",
+    "httpStatus": null
+  },
+  {
+    "url": "https://www.hotnewhiphop.com/943176-rodney-darkchild-jerkins-announce-alienz-alives-signee-miamis-aklesso?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExcVdFVndtUGNKTFczdkcwegEedlHTqAgJSccE-KD8hQ9yFW3Dwr9ISFqOskPUuC5Gz7dsf41mLlLC2FoXZRM_aem_GbRoTK4z1xb9eM9WhN4Jdg",
+    "type": "external-press",
+    "template": null,
+    "note": "WP post #6595 whose permalink points to external press coverage; appears in news listings",
+    "httpStatus": null
+  },
+  {
+    "url": "https://thegrindmagazine.com/alex-jean-receives-1st-dove-award/",
+    "type": "external-press",
+    "template": null,
+    "note": "WP post #6341 whose permalink points to external press coverage; appears in news listings",
+    "httpStatus": null
+  }
+]
