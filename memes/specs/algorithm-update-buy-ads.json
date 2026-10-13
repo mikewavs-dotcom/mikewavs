@@ -1,0 +1,38 @@
+{
+  "slug": "algorithm-update-buy-ads",
+  "bucket": "own the fans",
+  "duration": 5.0,
+  "fps": 30,
+  "seed": 61,
+  "background": {
+    "drift": 0.8,
+    "pulse": 0.9,
+    "pulseCycles": 2,
+    "scan": 0.55,
+    "roll": 0.6,
+    "glowY": 520
+  },
+  "setup": {
+    "text": "“We updated the algorithm to help creators.”"
+  },
+  "prop": {
+    "type": "dialog",
+    "speaker": "The app",
+    "npc": "bot",
+    "items": [
+      "fan",
+      "fan2",
+      "fan3"
+    ],
+    "ownerLabel": "Your followers",
+    "afterLabel": "Pay to reach",
+    "action": "lock"
+  },
+  "punch": {
+    "label": "Translation:",
+    "text": "*Buy ads.*",
+    "accent": "gold",
+    "size": 84
+  },
+  "caption": "Reach you have to rent is not reach you own."
+}

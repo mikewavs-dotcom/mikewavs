@@ -150,14 +150,25 @@
       const merch = el('div', 'merch');
       const lab = el('div', 'px lab', esc(p.ownerLabel || 'Your merch'));
       const items = el('div', 'items');
-      const its = (p.items || ['tee', 'vinyl', 'tee']).map((n) => {
-        const s = sprite(n, n === 'vinyl' ? 12 : 11);
+      // items: sprite names, or {name, px} to override the size
+      const SIZE = { tee: 11, vinyl: 12, cassette: 10, coin: 10, heart: 12, fan: 13, fan2: 13, fan3: 13 };
+      const locks = [];
+      const its = (p.items || ['tee', 'vinyl', 'tee']).map((it) => {
+        const n = typeof it === 'string' ? it : it.name;
+        const s = sprite(n, (it && it.px) || SIZE[n] || 11);
+        s.style.position = 'relative';
+        if (p.action === 'lock') {
+          const lk = sprite('lock', 5);
+          lk.style.cssText = 'position:absolute;left:50%;top:50%;margin:-25px 0 0 -25px;opacity:0';
+          s.appendChild(lk);
+          locks.push(lk);
+        }
         items.appendChild(s);
         return s;
       });
       merch.append(lab, items);
       const npc = el('div', 'npc');
-      const exec = sprite('exec', 15, null);
+      const exec = sprite(p.npc || 'exec', 15, null);
       npc.append(exec);
       scene.append(merch, npc);
       const dlg = frame('dlg', '');
@@ -166,7 +177,7 @@
       const more = el('div', 'px more', '&#9660;');
       dlg.firstChild.append(who, makeSetup(S.setup.text), more);
       st.append(scene, dlg);
-      E.p = { exec, its, lab, more, npc };
+      E.p = { exec, its, lab, more, npc, locks };
     },
     render(t, tp) {
       const P = E.p, p = S.prop;
@@ -178,20 +189,31 @@
       P.exec.setFrame(f);
       P.exec.style.transform = `translateY(${snap(Math.sin((TAU * 4 * t) / D) * 5, 5)}px)`;
       P.more.style.opacity = t >= T.typeEnd && t < tl && Math.floor((t - T.typeEnd) / 0.2) % 2 === 0 ? 1 : 0;
-      // merch slides over to the exec once the translation lands
-      if (P.dx == null) {
-        const nx = P.npc.offsetLeft + P.npc.offsetWidth * 0.5;
-        P.dx = P.its.map((s) => nx - (s.offsetLeft + s.offsetWidth / 2) - 40);
+      if (p.action === 'lock') {
+        // items stay put but get locked behind a paywall once the translation lands
+        P.its.forEach((s, i) => {
+          const v = seg(t, tp + 0.12 + i * 0.08, tp + 0.3 + i * 0.08);
+          s.firstChild.style.opacity = lerp(1, 0.3, v);
+          const lk = P.locks[i];
+          lk.style.opacity = v > 0 ? 1 : 0;
+          const y = v < 1 ? lerp(-90, 0, eIn(v)) : 0;
+          lk.style.transform = `translateY(${snap(y, 5)}px)`;
+        });
+      } else {
+        // items slide over to the NPC once the translation lands
+        if (P.dx == null) {
+          const nx = P.npc.offsetLeft + P.npc.offsetWidth * 0.5;
+          P.dx = P.its.map((s) => nx - (s.offsetLeft + s.offsetWidth / 2) - 40);
+        }
+        P.its.forEach((s, i) => {
+          const v = seg(t, tp + 0.12 + i * 0.07, tp + 0.5 + i * 0.07);
+          const x = P.dx[i] * eInOut(v) + (i - 1) * 46 * eInOut(v);
+          const y = -Math.sin(Math.PI * v) * 40 + 70 * eInOut(v);
+          const sc = lerp(1, 0.62, eInOut(v));
+          s.style.transform = `translate(${snap(x, 3)}px, ${snap(y, 3)}px) scale(${sc})`;
+          s.style.zIndex = 3;
+        });
       }
-      P.its.forEach((s, i) => {
-        const v = seg(t, tp + 0.12 + i * 0.07, tp + 0.5 + i * 0.07);
-        const x = P.dx[i] * eInOut(v) + (i - 1) * 46 * eInOut(v);
-        const y = -Math.sin(Math.PI * v) * 40 + 70 * eInOut(v);
-        const sc = lerp(1, 0.62, eInOut(v));
-        s.style.transform = `translate(${snap(x, 3)}px, ${snap(y, 3)}px) scale(${sc})`;
-        s.style.position = 'relative';
-        s.style.zIndex = 3;
-      });
       P.lab.textContent = t >= tp + 0.5 ? p.afterLabel || 'Their merch' : p.ownerLabel || 'Your merch';
       P.lab.style.color = t >= tp + 0.5 ? 'var(--mag)' : 'var(--cyan)';
     },

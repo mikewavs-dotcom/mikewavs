@@ -121,11 +121,86 @@
         '.PPPPPPPP.',
       ],
     },
+    // "the app": the algorithm as a smug little robot. Frames: idle, talk, grin.
+    bot: {
+      pal: { M: C.mag, A: C.steel, F: '#B9B4C9', K: '#0b0420', C: C.cyan, B: '#6a5ac8', P: C.mag },
+      grid: [
+        '......MMMM......',
+        '.......AA.......',
+        '..FFFFFFFFFFFF..',
+        '.FKKKKKKKKKKKKF.',
+        '.FKKKKKKKKKKKKF.',
+        '.FKKCCKKKKCCKKF.',
+        '.FKKCCKKKKCCKKF.',
+        '.FKKKKKKKKKKKKF.',
+        '.FKKKCCCCCCKKKF.',
+        '.FKKKKKKKKKKKKF.',
+        '..FFFFFFFFFFFF..',
+        '.....FFFFFF.....',
+        '...BBBBBBBBBB...',
+        '..BBBBBPPBBBBB..',
+        '..BBBBBPPBBBBB..',
+        '..BBBBBBBBBBBB..',
+      ],
+      frames: {
+        talk: { 8: '.FKKKKCCCCKKKKF.', 9: '.FKKKKCCCCKKKKF.' },
+        grin: { 5: '.FKKKCKKKKKCKKF.', 6: '.FKKCKCKKKCKCKF.', 8: '.FKCKKKKKKKKCKF.', 9: '.FKKCCCCCCCCKKF.' },
+      },
+    },
+    fan: {
+      pal: { S: C.bone, C: C.cyan },
+      grid: [
+        '..SSSS..',
+        '.SSSSSS.',
+        '.SSSSSS.',
+        '..SSSS..',
+        '.CCCCCC.',
+        'CCCCCCCC',
+        'CCCCCCCC',
+        'CCCCCCCC',
+      ],
+    },
+    cassette: {
+      pal: { K: '#3a3355', L: C.bone, W: C.cyan, M: C.mag },
+      grid: [
+        'KKKKKKKKKKKK',
+        'KLLLLLLLLLLK',
+        'KLLLLLLLLLLK',
+        'KKWWKKKKWWKK',
+        'KKWWKKKKWWKK',
+        'KKKKKKKKKKKK',
+        'KKKMMMMMMKKK',
+        'KKKKKKKKKKKK',
+      ],
+    },
+    heart: {
+      pal: { H: C.mag, W: C.bone },
+      grid: [
+        '.HH...HH.',
+        'HHHH.HHHH',
+        'HWHHHHHHH',
+        'HHHHHHHHH',
+        '.HHHHHHH.',
+        '..HHHHH..',
+        '...HHH...',
+        '....H....',
+      ],
+    },
     sparkle: {
       pal: { Y: C.goldLt, W: '#ffffff' },
       grid: ['..Y..', '..Y..', 'YYWYY', '..Y..', '..Y..'],
     },
   };
+
+  // palette swaps of existing sprites
+  const VARIANTS = {
+    anr: ['exec', { H: C.mag, B: C.gold, M: C.ink }],
+    fan2: ['fan', { C: C.mag }],
+    fan3: ['fan', { C: C.gold }],
+  };
+  for (const [k, [base, pal]] of Object.entries(VARIANTS)) {
+    SPRITES[k] = Object.assign({}, SPRITES[base], { pal: Object.assign({}, SPRITES[base].pal, pal) });
+  }
 
   function gridFor(name, frame) {
     const s = SPRITES[name];

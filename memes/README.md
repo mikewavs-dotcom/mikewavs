@@ -14,6 +14,10 @@ Every meme carries one thesis: artists make their own money up front, before DSP
 | `well-handle-the-merch` | Own the product | "We'll handle the merch." / Translation: we'll keep the merch. |
 | `email-list-didnt-notice` | Own the fans | The algorithm changed overnight. / Your email list didn't get the memo. |
 | `your-money-on-a-leash` | Independence | New item: $100K advance! / It's your own money. On a leash. |
+| `algorithm-update-buy-ads` | Own the fans | The app: "We updated the algorithm to help creators." / Translation: buy ads. |
+| `dont-worry-about-the-masters` | Own the product | Label: "Don't worry about the masters." / Translation: they're ours now. |
+| `were-investing-in-you` | Independence | Label: "We're investing in you." / Translation: you're paying it back. |
+| `grow-your-numbers-first` | Up-front money | A&R: "Grow your numbers, then hit us up." / Translation: build it yourself, then hand it over. |
 
 ## Render
 ```bash
@@ -26,12 +30,12 @@ python3 render.py --stills 1.2,3.0               # also save PNG stills to still
 Set `CHROMIUM_PATH` to use a specific Chromium build. Fix every `LINT ERROR` and `LAYOUT WARNING` before posting, and shorten the copy instead of shrinking the type.
 
 ## Make a new meme
-Copy a spec in `specs/`, then change the slug, copy and caption. Pick one of the four props:
+Copy a spec in `specs/`, then change the slug, copy and caption. Pick one of the four props. The `dialog` prop is the strongest format: the industry says something, and the punchline translates it.
 
 | `prop.type` | Gag | Fields |
 |---|---|---|
 | `streams` | two scoreboards, one stalls, one pays | `left {title, unit, target, goal, payout}`, `right {title, unit, count, before, payout}` |
-| `dialog` | RPG NPC says a line, merch walks to him | `speaker`, `items` (tee, vinyl), `ownerLabel`, `afterLabel` |
+| `dialog` | "Translation:" format. An NPC says the industry line, then the items walk over to him (`action: "take"`, the default) or get locked (`action: "lock"`) | `speaker`, `npc` (exec, anr, bot), `items` (tee, vinyl, cassette, coin, heart, fan, fan2, fan3), `ownerLabel`, `afterLabel`, `action` |
 | `reach` | feed meter glitches out, list stays online | `glitch [start,end]`, `feed {title, ok, err, dead}`, `list {title, ok}` |
 | `item` | "item get" pickup turns cursed | `chip`, `chipAfter`, `fine` |
 

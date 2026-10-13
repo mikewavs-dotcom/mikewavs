@@ -1,0 +1,36 @@
+{
+  "slug": "were-investing-in-you",
+  "bucket": "independence",
+  "duration": 5.0,
+  "fps": 30,
+  "seed": 71,
+  "background": {
+    "drift": 0.8,
+    "pulse": 0.9,
+    "pulseCycles": 2,
+    "scan": 0.55,
+    "roll": 0.6,
+    "glowY": 520
+  },
+  "setup": {
+    "text": "“We’re investing in you.”"
+  },
+  "prop": {
+    "type": "dialog",
+    "speaker": "Label",
+    "npc": "exec",
+    "items": [
+      "coin",
+      "coin",
+      "coin"
+    ],
+    "ownerLabel": "Your royalties",
+    "afterLabel": "Their royalties"
+  },
+  "punch": {
+    "label": "Translation:",
+    "text": "You're *paying*\n*it back.*",
+    "accent": "gold"
+  },
+  "caption": "An advance is a loan with a nicer name."
+}
