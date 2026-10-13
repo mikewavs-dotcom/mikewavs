@@ -5,7 +5,7 @@ Animated arcade memes, rendered from HTML/CSS to MP4. Same palette, fonts, logo 
 Every meme carries one thesis: artists make their own money up front, before DSPs, by owning their brand, products and fans. Punch at platforms, labels and the industry, never at artists.
 
 ## Output
-- `<slug>.mp4`: 1080x1350 (4:5), 30 fps, 5 s seamless loop, H.264 with a silent audio track
+- `<slug>.mp4`: 1080x1350 (4:5), 30 fps, 9 s seamless loop, H.264 with a silent audio track
 - `<slug>.caption.txt`: paste-ready one-line caption, no CTA
 
 | Slug | Bucket | Setup / punchline |
@@ -46,16 +46,17 @@ Copy rules (the linter enforces the first three):
 - Punchline: use `\n` for line breaks (about 15 characters per line at 58px) and `*word*` for the accent color (`punch.accent`: gold, cyan, mag). Use straight apostrophes because curly ones render wide in the pixel font.
 - Never punch at artists. Artists are the hero.
 
-## Timeline (seconds, all overridable in `timing`)
+## Timeline (9 s default; set `duration`, or override any value in `timing`)
 | t | What happens |
 |---|---|
 | 0.0 to 0.2 | CRT power-on |
-| 0.2 to 1.0 | setup types in |
-| 1.0 to 1.6 | beat with a blinking cursor |
-| 1.6 | punchline snaps in: flash, overshoot, RGB split, shake (with `punch.label`, the label stamps at 1.6 and the line lands at 1.8) |
-| 4.55 to 4.87 | CRT power-off back to a dot, which matches frame 0 |
+| 0.25 to about 1.5 | setup types in (speed follows its length: 0.8 to 1.8 s) |
+| next 1.3 s | beat with a blinking cursor, which gives the viewer time to read the setup |
+| about 2.8 | punchline snaps in: flash, overshoot, RGB split, shake (with `punch.label`, the label stamps first and the line lands 0.2 s later) |
+| until duration minus 0.45 | punchline holds, about 5.5 s at the default length |
+| last 0.45 s | CRT power-off back to a dot, which matches frame 0 |
 
-Background motion (twinkle, pixel drift, glow pulse, rolling scanline) runs whole cycles per loop. Tune it under `background`: `drift`, `pulse`, `pulseCycles`, `scan`, `roll`, `rollCycles`, `glowY`.
+Background and sprite motion (twinkle, pixel drift, glow pulse, rolling scanline, bobbing) runs whole cycles per loop at a fixed speed, so changing `duration` never breaks the loop. Tune it under `background`: `drift`, `pulse`, `pulseCycles`, `scan`, `roll`, `rollCycles`, `glowY`.
 
 ## Files
 - `render.py`: lint, layout check, frame capture (Playwright) and encode (ffmpeg)

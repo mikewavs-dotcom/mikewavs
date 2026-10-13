@@ -1,25 +1,20 @@
 {
   "slug": "email-list-didnt-notice",
   "bucket": "own the fans",
-  "duration": 5.0,
+  "duration": 9.0,
   "fps": 30,
   "seed": 37,
   "background": {
     "drift": 0.7,
     "pulse": 0.3,
     "scan": 0.75,
-    "roll": 1.0,
-    "rollCycles": 2
+    "roll": 1.0
   },
   "setup": {
     "text": "The algorithm changed overnight."
   },
   "prop": {
     "type": "reach",
-    "glitch": [
-      0.75,
-      1.5
-    ],
     "feed": {
       "title": "Reach",
       "ok": "Live",

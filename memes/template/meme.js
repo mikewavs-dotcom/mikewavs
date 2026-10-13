@@ -34,6 +34,8 @@
   const rich = (s) => esc(s).split('\n').map((l) => l.replace(/\*([^*]+)\*/g, '<em>$1</em>')).join('<br>');
 
   let S, D, T, FPS, prop, stars, motes, bgctx;
+  // whole cycles per loop at about `hz` per second, so motion keeps its speed at any duration
+  const cycles = (hz) => Math.max(1, Math.round(hz * D));
   const E = {};
   const fx = { shake: 0, flash: 0, scan: 0, glow: 0 };
 
@@ -187,7 +189,7 @@
       if (t >= tl) f = 'grin';
       else if (talking) f = Math.floor(t / 0.09) % 2 ? 'talk' : null;
       P.exec.setFrame(f);
-      P.exec.style.transform = `translateY(${snap(Math.sin((TAU * 4 * t) / D) * 5, 5)}px)`;
+      P.exec.style.transform = `translateY(${snap(Math.sin((TAU * cycles(0.8) * t) / D) * 5, 5)}px)`;
       P.more.style.opacity = t >= T.typeEnd && t < tl && Math.floor((t - T.typeEnd) / 0.2) % 2 === 0 ? 1 : 0;
       if (p.action === 'lock') {
         // items stay put but get locked behind a paywall once the translation lands
@@ -237,7 +239,7 @@
     render(t, tp) {
       const P = E.p, p = S.prop;
       const fr = Math.round(t * FPS);
-      const g0 = p.glitch ? p.glitch[0] : 0.7, g1 = p.glitch ? p.glitch[1] : T.punch - 0.1;
+      const g0 = p.glitch ? p.glitch[0] : T.typeEnd - 0.25, g1 = p.glitch ? p.glitch[1] : T.punch - 0.1;
       const inG = t >= g0 && t < g1;
       const u = seg(t, g0, g1);
       let n = Math.round(lerp(20, 1, eIn(u) * 0.5 + u * 0.5));
@@ -325,9 +327,9 @@
       P.chip.textContent = cursed ? p.chipAfter : p.chip;
       P.chip.className = 'px chip ' + (cursed ? '' : 'gold');
       P.f.className = 'frame ' + (cursed ? 'mag' : 'gold');
-      P.bob.style.transform = `translateY(${snap(Math.sin((TAU * 3 * t) / D) * 8, 4)}px)`;
+      P.bob.style.transform = `translateY(${snap(Math.sin((TAU * cycles(0.6) * t) / D) * 8, 4)}px)`;
       P.sparks.forEach((s, i) => {
-        const on = Math.sin((TAU * (2 + (i % 3)) * t) / D + i * 1.7) > -0.2;
+        const on = Math.sin((TAU * cycles(0.4 + 0.2 * (i % 3)) * t) / D + i * 1.7) > -0.2;
         const fade = cursed ? 1 - seg(v, 0, 0.15) : 1;
         s.style.opacity = on ? fade : 0;
       });
@@ -442,7 +444,7 @@
     c.fillStyle = '#060018';
     c.fillRect(0, 0, 1080, 1350);
     const pulse = B.pulse ?? 0.4;
-    const pc = B.pulseCycles || 2;
+    const pc = B.pulseCycles || cycles(0.4);
     const ph = 0.5 + 0.5 * Math.sin((TAU * pc * t) / D);
     // floor glow, as on the carousels
     const g = c.createLinearGradient(0, 1350, 0, 830);
@@ -476,7 +478,7 @@
     c.globalAlpha = 1;
     // overlays
     const roll = B.roll ?? 1;
-    const ry = -240 + frac((t / D) * (B.rollCycles || 1)) * (1350 + 240);
+    const ry = -240 + frac((t / D) * (B.rollCycles || cycles(0.2))) * (1350 + 240);
     E.roll.style.transform = `translateY(${ry}px)`;
     E.roll.style.opacity = roll;
     E.scan.style.opacity = clamp((B.scan ?? 0.6) + fx.scan);
@@ -509,9 +511,14 @@
   // ---------- public API ----------
   window.build = function (spec) {
     S = spec;
-    D = spec.duration || 5;
+    D = spec.duration || 9;
     FPS = spec.fps || 30;
-    T = Object.assign({ on: 0.2, typeStart: 0.2, typeEnd: 1.0, punch: 1.6, labelLead: 0.2, off: 4.55 }, spec.timing || {});
+    // Typing speed follows the setup length; the beat after it leaves time to read the setup,
+    // and the punchline then holds until the CRT wipe at the end of the loop.
+    const nChars = spec.setup.text.replace(/[*\n]/g, '').length;
+    const typeStart = 0.25;
+    const typeEnd = typeStart + clamp(nChars / 26, 0.8, 1.8);
+    T = Object.assign({ on: 0.2, typeStart, typeEnd, punch: typeEnd + 1.3, labelLead: 0.2, off: D - 0.45 }, spec.timing || {});
     document.documentElement.style.setProperty('--accent', COLORS[spec.punch.accent || 'gold'] || spec.punch.accent);
     E.fg = $('#fg'); E.crt = $('#crt'); E.roll = $('#roll'); E.scan = $('.scan'); E.flash = $('#flash');
     bgctx = $('#bg').getContext('2d');

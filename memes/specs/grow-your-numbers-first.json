@@ -1,13 +1,12 @@
 {
   "slug": "grow-your-numbers-first",
   "bucket": "up-front money",
-  "duration": 5.0,
+  "duration": 9.0,
   "fps": 30,
   "seed": 79,
   "background": {
     "drift": 0.8,
     "pulse": 0.9,
-    "pulseCycles": 2,
     "scan": 0.55,
     "roll": 0.6,
     "glowY": 520

@@ -1,13 +1,12 @@
 {
   "slug": "your-money-on-a-leash",
   "bucket": "independence",
-  "duration": 5.0,
+  "duration": 9.0,
   "fps": 30,
   "seed": 53,
   "background": {
     "drift": 1.0,
     "pulse": 0.8,
-    "pulseCycles": 2,
     "scan": 0.55,
     "roll": 0.7
   },
