@@ -1,0 +1,84 @@
+{
+ "slug": "were-investing-in-you-decoded",
+ "kind": "breakdown",
+ "traveler": "walker",
+ "cover": {
+  "chip": "Breakdown",
+  "headline": "We're investing in you, decoded",
+  "sub": "Why label investment comes back out of your royalties, and how to invest in yourself."
+ },
+ "intro": {
+  "chip": "Level select",
+  "headline": "Who really pays the investment"
+ },
+ "slides": [
+  {
+   "chip": "Level 01",
+   "sprite": "hourglass",
+   "headline": "It gets recouped",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Recording, videos and marketing are often **recoupable**. The label spends now and takes it back from your share later."
+    },
+    {
+     "type": "move",
+     "text": "Ask for a written list of every recoupable cost."
+    }
+   ]
+  },
+  {
+   "chip": "Level 02",
+   "sprite": "key",
+   "headline": "Not an investor",
+   "blocks": [
+    {
+     "type": "compare",
+     "left": {
+      "title": "Investor",
+      "text": "Owns a stake and shares the risk if it fails."
+     },
+     "right": {
+      "title": "Label",
+      "text": "Recoups from your share, and may own the masters too."
+     }
+    },
+    {
+     "type": "move",
+     "text": "Ask for the unrecouped balance on every royalty statement."
+    }
+   ]
+  },
+  {
+   "chip": "Level 03",
+   "sprite": "arrowup",
+   "headline": "Back yourself",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Start with what pays back fastest: an **email list**, a presale, one bundle. Each one funds the next."
+    },
+    {
+     "type": "move",
+     "text": "Put a fixed share of every release's income back into the list and the store."
+    }
+   ]
+  },
+  {
+   "chip": "Level 04",
+   "sprite": "heart",
+   "headline": "Fans fund it",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "A presale is fans paying up front for something they want. **No interest, no recoupment, no terms.**"
+    },
+    {
+     "type": "move",
+     "text": "Run your next presale three weeks before release and use it to pay for the record."
+    }
+   ]
+  }
+ ],
+ "cta": {}
+}

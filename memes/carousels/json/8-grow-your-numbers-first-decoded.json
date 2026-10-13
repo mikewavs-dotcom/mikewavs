@@ -1,0 +1,90 @@
+{
+ "slug": "grow-your-numbers-first-decoded",
+ "kind": "breakdown",
+ "traveler": "coin",
+ "cover": {
+  "chip": "Breakdown",
+  "headline": "The numbers line, decoded",
+  "sub": "Why labels wait for you to build the audience, and why that audience is your leverage."
+ },
+ "intro": {
+  "chip": "Level select",
+  "headline": "Your audience is your leverage"
+ },
+ "slides": [
+  {
+   "chip": "Level 01",
+   "sprite": "arrowup",
+   "headline": "They want proof",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Labels want artists who already have **the audience, the data and the sales**. You do the early work either way."
+    },
+    {
+     "type": "move",
+     "text": "Track your own numbers: list size, presale orders, repeat buyers. Not just streams."
+    }
+   ]
+  },
+  {
+   "chip": "Level 02",
+   "sprite": "heart",
+   "headline": "The audience is the asset",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Fans who buy from you directly are worth more than a deal that pays you **a share of them**."
+    },
+    {
+     "type": "move",
+     "text": "Before any meeting, know how many fans you can reach without a platform."
+    }
+   ]
+  },
+  {
+   "chip": "Level 03",
+   "sprite": "key",
+   "headline": "Own, then talk",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "If you can sell out a presale alone, you can ask for **a license, a shorter term or a bigger share**. Or skip the deal."
+    },
+    {
+     "type": "move",
+     "text": "Write down what a partner adds that you can't do yourself. Sign only for that."
+    }
+   ]
+  },
+  {
+   "chip": "Level 04",
+   "sprite": "coin",
+   "headline": "Build to keep",
+   "blocks": [
+    {
+     "type": "timeline",
+     "rows": [
+      {
+       "when": "Now",
+       "text": "Start the list and a signup offer"
+      },
+      {
+       "when": "Next",
+       "text": "Run a presale on your next release"
+      },
+      {
+       "when": "Then",
+       "text": "Decide if you need a label at all"
+      }
+     ]
+    },
+    {
+     "type": "move",
+     "text": "Keep every fan's contact in a tool you own, whatever deal comes next."
+    }
+   ]
+  }
+ ],
+ "cta": {}
+}

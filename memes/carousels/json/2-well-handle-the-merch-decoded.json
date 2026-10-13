@@ -1,0 +1,94 @@
+{
+ "slug": "well-handle-the-merch-decoded",
+ "kind": "breakdown",
+ "traveler": "invader",
+ "cover": {
+  "chip": "Breakdown",
+  "headline": "The merch line, decoded",
+  "sub": "What a label means when it offers to run your merch, and how to keep the margin."
+ },
+ "intro": {
+  "chip": "Level select",
+  "headline": "Who keeps the merch money?"
+ },
+ "slides": [
+  {
+   "chip": "Level 01",
+   "sprite": "key",
+   "headline": "What handle means",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "In a 360 or merch deal, **merch rights** can sit inside the contract. The label sells your designs and pays you a share."
+    },
+    {
+     "type": "move",
+     "text": "Read the merch clause before you sign: the share, the term and who owns the designs."
+    }
+   ]
+  },
+  {
+   "chip": "Level 02",
+   "sprite": "box",
+   "headline": "Keep the margin",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Example hoodie sold in your own store."
+    },
+    {
+     "type": "receipt",
+     "rows": [
+      [
+       "Price",
+       "$60"
+      ],
+      [
+       "Blank and print",
+       "-$22"
+      ]
+     ],
+     "total": [
+      "You keep",
+      "$38"
+     ]
+    },
+    {
+     "type": "move",
+     "text": "Run merch through a store you own, so every order adds a buyer to your list."
+    }
+   ]
+  },
+  {
+   "chip": "Level 03",
+   "sprite": "ticket",
+   "headline": "Bundle it with the music",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "A shirt plus the record is an easy upgrade for a fan who was **already buying**."
+    },
+    {
+     "type": "move",
+     "text": "Offer one bundle per release. Three options max, or people stall."
+    }
+   ]
+  },
+  {
+   "chip": "Level 04",
+   "sprite": "heart",
+   "headline": "The buyer list is the asset",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Every order gives you a name, an email and a city. In a label-run store, that list isn't yours."
+    },
+    {
+     "type": "move",
+     "text": "Tag every merch buyer in your email tool so the next drop goes to them first."
+    }
+   ]
+  }
+ ],
+ "cta": {}
+}

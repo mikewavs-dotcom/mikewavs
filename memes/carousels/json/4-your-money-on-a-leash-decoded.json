@@ -1,0 +1,84 @@
+{
+ "slug": "your-money-on-a-leash-decoded",
+ "kind": "breakdown",
+ "traveler": "ticket",
+ "cover": {
+  "chip": "Breakdown",
+  "headline": "Your money on a leash",
+  "sub": "How recoupment works, why the check comes with strings, and what to build instead."
+ },
+ "intro": {
+  "chip": "Level select",
+  "headline": "How an advance gets paid back"
+ },
+ "slides": [
+  {
+   "chip": "Level 01",
+   "sprite": "coin",
+   "headline": "It's a loan, not a gift",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "An advance is paid back from **your royalties**. Until it's recouped, your share of sales goes to the label first."
+    },
+    {
+     "type": "move",
+     "text": "Ask what's recoupable before you sign: recording, video, marketing, tour support."
+    }
+   ]
+  },
+  {
+   "chip": "Level 02",
+   "sprite": "hourglass",
+   "headline": "Run the math",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Example: at a 20% royalty, a $50K advance needs **$250K in revenue** before you see a royalty check."
+    },
+    {
+     "type": "math",
+     "lines": [
+      "$50K / 20%",
+      "= $250K"
+     ]
+    },
+    {
+     "type": "move",
+     "text": "Run this math on any offer before you negotiate."
+    }
+   ]
+  },
+  {
+   "chip": "Level 03",
+   "sprite": "key",
+   "headline": "Cross-collateral",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Some deals charge one release's unrecouped costs against the next one's royalties. **A hit can pay for an older miss.**"
+    },
+    {
+     "type": "move",
+     "text": "Ask for each release to recoup on its own."
+    }
+   ]
+  },
+  {
+   "chip": "Level 04",
+   "sprite": "arrowup",
+   "headline": "Let fans fund it",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "A presale, a bundle and a buyer list can fund a release up front, with **no recoupment** and no one else's terms."
+    },
+    {
+     "type": "move",
+     "text": "Price the next release so the presale covers recording. Then decide if you need a deal."
+    }
+   ]
+  }
+ ],
+ "cta": {}
+}

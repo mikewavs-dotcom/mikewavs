@@ -1,0 +1,84 @@
+{
+ "slug": "dont-worry-about-the-masters-decoded",
+ "kind": "breakdown",
+ "traveler": "disc",
+ "cover": {
+  "chip": "Breakdown",
+  "headline": "The masters line, decoded",
+  "sub": "What owning your masters means, why labels want them, and how to keep yours."
+ },
+ "intro": {
+  "chip": "Level select",
+  "headline": "The recording is the prize"
+ },
+ "slides": [
+  {
+   "chip": "Level 01",
+   "sprite": "disc",
+   "headline": "What a master is",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The master is the **recording itself**. Whoever owns it controls licensing, reissues, syncs and the recording side of streaming."
+    },
+    {
+     "type": "move",
+     "text": "Check your contracts: who owns the masters, and for how long?"
+    }
+   ]
+  },
+  {
+   "chip": "Level 02",
+   "sprite": "key",
+   "headline": "License it out",
+   "blocks": [
+    {
+     "type": "compare",
+     "left": {
+      "title": "License",
+      "text": "The label rents the recording for a term, then it comes back."
+     },
+     "right": {
+      "title": "Sign over",
+      "text": "The label owns the recording, often for good."
+     }
+    },
+    {
+     "type": "move",
+     "text": "If you need a partner, ask for a license with an end date, not a transfer."
+    }
+   ]
+  },
+  {
+   "chip": "Level 03",
+   "sprite": "box",
+   "headline": "The sync money",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "When a song lands in an ad, show or game, the **master owner** approves it and collects the master side of the fee."
+    },
+    {
+     "type": "move",
+     "text": "Keep clean stems and splits on file so you can say yes to a sync fast."
+    }
+   ]
+  },
+  {
+   "chip": "Level 04",
+   "sprite": "coin",
+   "headline": "Pay it, own it",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Funding the recording yourself, through a presale or your own savings, is **how you keep the masters**."
+    },
+    {
+     "type": "move",
+     "text": "Before the next session, decide who pays for it. Whoever pays usually owns it."
+    }
+   ]
+  }
+ ],
+ "cta": {}
+}

@@ -1,0 +1,101 @@
+{
+ "slug": "one-fan-beats-1000-streams-decoded",
+ "kind": "breakdown",
+ "traveler": "coin",
+ "cover": {
+  "chip": "Breakdown",
+  "headline": "1 fan beats 1,000 streams",
+  "sub": "Why one presale order pays you faster than a year of plays, and how to set one up."
+ },
+ "intro": {
+  "chip": "Level select",
+  "headline": "Get paid before release day"
+ },
+ "slides": [
+  {
+   "chip": "Level 01",
+   "sprite": "hourglass",
+   "headline": "1,000 or nothing",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Since April 2024, a Spotify track needs **1,000 streams in 12 months** before it earns recorded royalties at all. Below that, plays still count. The money doesn't."
+    },
+    {
+     "type": "move",
+     "text": "Treat streams on a new release as discovery, not income."
+    }
+   ]
+  },
+  {
+   "chip": "Level 02",
+   "sprite": "coin",
+   "headline": "Paid at checkout",
+   "blocks": [
+    {
+     "type": "compare",
+     "left": {
+      "title": "Streams",
+      "text": "Paid months later, if the track clears the bar."
+     },
+     "right": {
+      "title": "Presale",
+      "text": "Paid the moment the fan checks out."
+     }
+    },
+    {
+     "type": "move",
+     "text": "Open a presale before the release date, not after it."
+    }
+   ]
+  },
+  {
+   "chip": "Level 03",
+   "sprite": "ticket",
+   "headline": "Stack the tiers",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Example tiers. Give every fan a way in."
+    },
+    {
+     "type": "ladder",
+     "rungs": [
+      {
+       "price": "$60",
+       "text": "Signed vinyl and a thank-you note"
+      },
+      {
+       "price": "$30",
+       "text": "Vinyl and early download"
+      },
+      {
+       "price": "$10",
+       "text": "Early download"
+      }
+     ]
+    },
+    {
+     "type": "move",
+     "text": "Keep the cheapest tier under $15 so the first yes is easy."
+    }
+   ]
+  },
+  {
+   "chip": "Level 04",
+   "sprite": "heart",
+   "headline": "Presale the list",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Fans on your email list already raised a hand. Send them the presale **48 hours before** anyone else."
+    },
+    {
+     "type": "move",
+     "text": "Add a signup form to your bio link before the presale opens."
+    }
+   ]
+  }
+ ],
+ "cta": {}
+}

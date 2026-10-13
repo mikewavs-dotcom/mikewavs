@@ -1,0 +1,84 @@
+{
+ "slug": "email-list-didnt-notice-decoded",
+ "kind": "breakdown",
+ "traveler": "mail",
+ "cover": {
+  "chip": "Breakdown",
+  "headline": "Your list didn't get the memo",
+  "sub": "Why algorithm changes hit your reach but not your email list, and what to build first."
+ },
+ "intro": {
+  "chip": "Level select",
+  "headline": "Own the line to your fans"
+ },
+ "slides": [
+  {
+   "chip": "Level 01",
+   "sprite": "invader",
+   "headline": "Rented reach",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The platform decides who sees each post. When it changes the rules, **your reach changes with it**, and nobody asks you."
+    },
+    {
+     "type": "move",
+     "text": "Post for discovery, but don't count followers as an audience you can reach on demand."
+    }
+   ]
+  },
+  {
+   "chip": "Level 02",
+   "sprite": "disc",
+   "headline": "No feed in email",
+   "blocks": [
+    {
+     "type": "compare",
+     "left": {
+      "title": "Feed",
+      "text": "Shown to some followers, ranked by the app."
+     },
+     "right": {
+      "title": "Email",
+      "text": "Sent to every subscriber, on the day you choose."
+     }
+    },
+    {
+     "type": "move",
+     "text": "Pick one email tool and one signup form this week."
+    }
+   ]
+  },
+  {
+   "chip": "Level 03",
+   "sprite": "key",
+   "headline": "Trade something for the email",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "People sign up for a reason: an **early listen**, a presale code, a show alert for their city."
+    },
+    {
+     "type": "move",
+     "text": "Put the signup offer in the first line of your bio, not the third."
+    }
+   ]
+  },
+  {
+   "chip": "Level 04",
+   "sprite": "coin",
+   "headline": "The list is where sales happen",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Presales, merch drops and tickets go to the list first. It's an audience **no update can throttle**."
+    },
+    {
+     "type": "move",
+     "text": "Email the list every release week, even with nothing to sell. Keep it warm."
+    }
+   ]
+  }
+ ],
+ "cta": {}
+}

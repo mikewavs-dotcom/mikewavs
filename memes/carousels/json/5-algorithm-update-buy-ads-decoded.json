@@ -1,0 +1,84 @@
+{
+ "slug": "algorithm-update-buy-ads-decoded",
+ "kind": "breakdown",
+ "traveler": "heart",
+ "cover": {
+  "chip": "Breakdown",
+  "headline": "Translation: buy ads",
+  "sub": "What a reach drop after an algorithm update really asks for, and the channel you own."
+ },
+ "intro": {
+  "chip": "Level select",
+  "headline": "Reach you own vs reach you rent"
+ },
+ "slides": [
+  {
+   "chip": "Level 01",
+   "sprite": "invader",
+   "headline": "They sell reach",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Platforms make money selling attention. When your organic reach drops, the fix they offer is **paid reach**."
+    },
+    {
+     "type": "move",
+     "text": "Before boosting a post, ask what you keep once the ad stops."
+    }
+   ]
+  },
+  {
+   "chip": "Level 02",
+   "sprite": "arrowup",
+   "headline": "Use ads to grow the list",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "If you do pay, pay for **signups**, not likes. A follower can vanish in the next update. An email stays."
+    },
+    {
+     "type": "move",
+     "text": "Point ads at a signup page with one offer, like an early listen or presale access."
+    }
+   ]
+  },
+  {
+   "chip": "Level 03",
+   "sprite": "disc",
+   "headline": "Send on your day",
+   "blocks": [
+    {
+     "type": "compare",
+     "left": {
+      "title": "Boosted post",
+      "text": "Reaches people while the budget lasts."
+     },
+     "right": {
+      "title": "Email",
+      "text": "Reaches every subscriber, every time you send."
+     }
+    },
+    {
+     "type": "move",
+     "text": "Send release news to the list first, then post it."
+    }
+   ]
+  },
+  {
+   "chip": "Level 04",
+   "sprite": "heart",
+   "headline": "Reward the ones who came",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Fans who joined the list deserve something the feed doesn't get: **first access**, a code, a voice note."
+    },
+    {
+     "type": "move",
+     "text": "Give list members a 24-hour head start on every presale."
+    }
+   ]
+  }
+ ],
+ "cta": {}
+}
