@@ -23,7 +23,7 @@
     },
     {
      "type": "move",
-     "text": "Ask for a written list of every recoupable cost."
+     "text": "Get every recoupable cost listed in writing."
     }
    ]
   },
@@ -40,7 +40,7 @@
      },
      "right": {
       "title": "Label",
-      "text": "Recoups from your share, and may own the masters too."
+      "text": "Recoups from your share and may own the masters."
      }
     },
     {
