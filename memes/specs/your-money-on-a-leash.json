@@ -1,0 +1,31 @@
+{
+  "slug": "your-money-on-a-leash",
+  "bucket": "independence",
+  "duration": 5.0,
+  "fps": 30,
+  "seed": 53,
+  "background": {
+    "drift": 1.0,
+    "pulse": 0.8,
+    "pulseCycles": 2,
+    "scan": 0.55,
+    "roll": 0.7
+  },
+  "setup": {
+    "text": "New item: $100K advance!"
+  },
+  "prop": {
+    "type": "item",
+    "chip": "Item get!",
+    "chipAfter": "Cursed item",
+    "fine": "*recoupable from your royalties"
+  },
+  "punch": {
+    "text": "It's your\nown money.\n*On a leash.*",
+    "accent": "mag"
+  },
+  "layout": {
+    "gap": 56
+  },
+  "caption": "An advance is a loan against your own royalties, and the label decides the terms."
+}

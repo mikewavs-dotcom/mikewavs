@@ -1,0 +1,35 @@
+{
+  "slug": "well-handle-the-merch",
+  "bucket": "own the product",
+  "duration": 5.0,
+  "fps": 30,
+  "seed": 23,
+  "background": {
+    "drift": 0.8,
+    "pulse": 0.9,
+    "pulseCycles": 2,
+    "scan": 0.55,
+    "roll": 0.6,
+    "glowY": 520
+  },
+  "setup": {
+    "text": "“We’ll handle the merch.”"
+  },
+  "prop": {
+    "type": "dialog",
+    "speaker": "Label",
+    "items": [
+      "tee",
+      "vinyl",
+      "tee"
+    ],
+    "ownerLabel": "Your merch",
+    "afterLabel": "Their merch"
+  },
+  "punch": {
+    "label": "Translation:",
+    "text": "We'll *keep*\nthe merch.",
+    "accent": "gold"
+  },
+  "caption": "Your vinyl, your tees, your bundles, your margin."
+}

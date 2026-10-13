@@ -1,0 +1,60 @@
+# @wavs_digital meme generator
+
+Animated arcade memes, rendered from HTML/CSS to MP4. Same palette, fonts, logo and pixel frames as the weekly carousels.
+
+Every meme carries one thesis: artists make their own money up front, before DSPs, by owning their brand, products and fans. Punch at platforms, labels and the industry, never at artists.
+
+## Output
+- `<slug>.mp4`: 1080x1350 (4:5), 30 fps, 5 s seamless loop, H.264 with a silent audio track
+- `<slug>.caption.txt`: paste-ready one-line caption, no CTA
+
+| Slug | Bucket | Setup / punchline |
+|---|---|---|
+| `one-fan-beats-1000-streams` | Up-front money | Spotify: 1,000 streams or $0. / Presale: 1 fan. Paid today. |
+| `well-handle-the-merch` | Own the product | "We'll handle the merch." / Translation: we'll keep the merch. |
+| `email-list-didnt-notice` | Own the fans | The algorithm changed overnight. / Your email list didn't get the memo. |
+| `your-money-on-a-leash` | Independence | New item: $100K advance! / It's your own money. On a leash. |
+
+## Render
+```bash
+python3 -m pip install "playwright==1.56.0"      # plus ffmpeg on PATH; Chromium via Playwright
+python3 render.py                                # all specs
+python3 render.py specs/<slug>.json              # one
+python3 render.py --check                        # lint + layout only, no video
+python3 render.py --stills 1.2,3.0               # also save PNG stills to stills/
+```
+Set `CHROMIUM_PATH` to use a specific Chromium build. Fix every `LINT ERROR` and `LAYOUT WARNING` before posting, and shorten the copy instead of shrinking the type.
+
+## Make a new meme
+Copy a spec in `specs/`, then change the slug, copy and caption. Pick one of the four props:
+
+| `prop.type` | Gag | Fields |
+|---|---|---|
+| `streams` | two scoreboards, one stalls, one pays | `left {title, unit, target, goal, payout}`, `right {title, unit, count, before, payout}` |
+| `dialog` | RPG NPC says a line, merch walks to him | `speaker`, `items` (tee, vinyl), `ownerLabel`, `afterLabel` |
+| `reach` | feed meter glitches out, list stays online | `glitch [start,end]`, `feed {title, ok, err, dead}`, `list {title, ok}` |
+| `item` | "item get" pickup turns cursed | `chip`, `chipAfter`, `fine` |
+
+Copy rules (the linter enforces the first three):
+- No em or en dashes. No CTA, links, "in bio" or comment prompts on screen or in the caption.
+- Caption is one line.
+- On screen: setup + punchline at 14 words or fewer (readable in under 3 s).
+- Punchline: use `\n` for line breaks (about 15 characters per line at 58px) and `*word*` for the accent color (`punch.accent`: gold, cyan, mag). Use straight apostrophes because curly ones render wide in the pixel font.
+- Never punch at artists. Artists are the hero.
+
+## Timeline (seconds, all overridable in `timing`)
+| t | What happens |
+|---|---|
+| 0.0 to 0.2 | CRT power-on |
+| 0.2 to 1.0 | setup types in |
+| 1.0 to 1.6 | beat with a blinking cursor |
+| 1.6 | punchline snaps in: flash, overshoot, RGB split, shake (with `punch.label`, the label stamps at 1.6 and the line lands at 1.8) |
+| 4.55 to 4.87 | CRT power-off back to a dot, which matches frame 0 |
+
+Background motion (twinkle, pixel drift, glow pulse, rolling scanline) runs whole cycles per loop. Tune it under `background`: `drift`, `pulse`, `pulseCycles`, `scan`, `roll`, `rollCycles`, `glowY`.
+
+## Files
+- `render.py`: lint, layout check, frame capture (Playwright) and encode (ffmpeg)
+- `template/meme.html`, `meme.css`, `meme.js`, `sprites.js`: the frame, the animation engine and the pixel sprites
+- `assets/`: brand fonts (Press Start 2P, Inter, JetBrains Mono) and the W icon, copied from the carousel kit
+- `specs/`: one JSON per meme

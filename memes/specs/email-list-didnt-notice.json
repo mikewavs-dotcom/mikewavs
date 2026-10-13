@@ -1,0 +1,39 @@
+{
+  "slug": "email-list-didnt-notice",
+  "bucket": "own the fans",
+  "duration": 5.0,
+  "fps": 30,
+  "seed": 37,
+  "background": {
+    "drift": 0.7,
+    "pulse": 0.3,
+    "scan": 0.75,
+    "roll": 1.0,
+    "rollCycles": 2
+  },
+  "setup": {
+    "text": "The algorithm changed overnight."
+  },
+  "prop": {
+    "type": "reach",
+    "glitch": [
+      0.75,
+      1.5
+    ],
+    "feed": {
+      "title": "Reach",
+      "ok": "Live",
+      "err": "Error",
+      "dead": "Signal lost"
+    },
+    "list": {
+      "title": "Email list",
+      "ok": "Online"
+    }
+  },
+  "punch": {
+    "text": "Your *email list*\ndidn't get\nthe memo.",
+    "accent": "cyan"
+  },
+  "caption": "Followers belong to the app, your email list belongs to you."
+}

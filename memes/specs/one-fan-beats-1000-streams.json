@@ -1,0 +1,40 @@
+{
+  "slug": "one-fan-beats-1000-streams",
+  "bucket": "up-front money",
+  "duration": 5.0,
+  "fps": 30,
+  "seed": 11,
+  "background": {
+    "drift": 1.0,
+    "pulse": 0.35,
+    "scan": 0.55,
+    "roll": 0.8
+  },
+  "setup": {
+    "text": "Spotify: 1,000 streams or $0."
+  },
+  "prop": {
+    "type": "streams",
+    "left": {
+      "title": "Streams",
+      "unit": "",
+      "target": 999,
+      "goal": 1000,
+      "payLabel": "Payout",
+      "payout": "$0.00"
+    },
+    "right": {
+      "title": "Presale",
+      "unit": "fan",
+      "count": 1,
+      "payLabel": "Payout",
+      "before": "$0.00",
+      "payout": "$30.00"
+    }
+  },
+  "punch": {
+    "text": "Presale: 1 fan.\n*Paid today.*",
+    "accent": "gold"
+  },
+  "caption": "One presale order pays you before a single stream does."
+}
