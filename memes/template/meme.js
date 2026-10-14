@@ -532,7 +532,11 @@
     initBg();
     // measure with everything visible and untransformed
     E.punch.style.visibility = 'visible';
-    return checkLayout();
+    const res = checkLayout();
+    // Where the video file starts in the loop. Default: the full meme on screen with every
+    // effect settled, so frame 0 (the feed preview) shows the joke instead of the CRT dot.
+    res.start = spec.start != null ? spec.start : Math.min(T.punch + 2, T.off - 0.6);
+    return res;
   };
 
   window.renderAt = function (t) {

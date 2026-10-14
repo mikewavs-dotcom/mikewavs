@@ -106,8 +106,10 @@ async def render_one(browser, spec_path, out_dir, check_only, stills, stills_dir
         ],
         stdin=subprocess.PIPE,
     )
+    # The loop is seamless, so rotate it: frame 0 is the finished meme, not the CRT power-on.
+    start = result["start"]
     for i in range(n):
-        await page.evaluate("t => window.renderAt(t)", i / fps)
+        await page.evaluate("t => window.renderAt(t)", start + i / fps)
         ff.stdin.write(await page.screenshot(type="png"))
     ff.stdin.close()
     if ff.wait() != 0:

@@ -6,6 +6,7 @@ Every meme carries one thesis: artists make their own money up front, before DSP
 
 ## Output
 - `<slug>.mp4`: 1080x1350 (4:5), 30 fps, 9 s seamless loop, H.264 with a silent audio track
+- Frame 0 is the finished meme (setup, punchline and prop all on screen), so the feed preview shows the joke, not a black CRT dot. The file starts 2 s after the punchline lands, plays through the CRT off/on and the full gag, and loops back to that frame. Set `start` (seconds into the timeline below) in a spec to change it; `"start": 0` restores the old power-on opening.
 - `<slug>.caption.txt`: paste-ready one-line caption, no CTA
 
 | Slug | Bucket | Setup / punchline |
@@ -47,6 +48,8 @@ Copy rules (the linter enforces the first three):
 - Never punch at artists. Artists are the hero.
 
 ## Timeline (9 s default; set `duration`, or override any value in `timing`)
+Times are on the animation timeline. The video file begins at `start` (default: punchline + 2 s) and wraps around.
+
 | t | What happens |
 |---|---|
 | 0.0 to 0.2 | CRT power-on |
